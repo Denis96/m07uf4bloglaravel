@@ -28,6 +28,6 @@ Route::get('/catalog/show/{id}', function ($id) {
 Route::get('/catalog/create', function () {
     return view('create');
 });
-Route::get('/catalog/edit/{id}', function () {
+Route::get('/catalog/edit/{id}', function ($id) {
     return view('edit');
 });
